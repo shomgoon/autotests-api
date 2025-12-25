@@ -10,12 +10,12 @@ class APIClient:
 
     def get(self, url: URL | str, params: QueryParams | None = None) -> Response:
         """
-        Выполняет GET-запрос.
+         Выполняет GET-запрос.
 
-        :param url: URL-адрес эндпоинта.
-        :param params: GET-параметры запроса (например, ?key=value).
-        :return: Объект Response с данными ответа.
-        """
+         :param url: URL-адрес эндпоинта.
+         :param params: GET-параметры запроса (например, ?key=value).
+         :return: Объект Response с данными ответа.
+         """
         return self.client.get(url, params=params)
 
     def post(
